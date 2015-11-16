@@ -1,0 +1,1 @@
+export { default } from 'emberek-multiselect/components/ek-multiselect';

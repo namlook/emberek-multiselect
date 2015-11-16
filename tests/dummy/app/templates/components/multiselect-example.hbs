@@ -1,0 +1,17 @@
+
+<div>
+{{#ek-multiselect selection=selectedValues}}
+    {{#each options as |option|}}
+        <option value="{{option.name}}"> {{option.label}} </option>
+    {{/each}}
+{{/ek-multiselect}}
+</div>
+
+{{selectedValues.length}} selected values:
+
+<ul>
+{{log selectedValues}}
+{{#each selectedValues as |value|}}
+    <li> {{value}} </li>
+{{/each}}
+</ul>
